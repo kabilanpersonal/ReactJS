@@ -6,6 +6,7 @@ import ReactHooks from './Hooks/ReactHooks';
 import UserlistWithData from './HigherOrderComponents/UserlistWithData';
 import CustomerAdd from './HandsOn/CustomerAdd';  
 import ObjectStateManagement from './State-Non-Primitive data/ObjectStateManagement'
+import TableDisplay from './HandsOn/TableDisplay';
 //Class inheritance
 class Car {
   constructor(name) {
@@ -134,6 +135,10 @@ function App(props) {
         <div>
           <h1>State Management of Objects</h1>
           <ObjectStateManagement />
+        </div>
+        <div>
+          <h1>Hands ON</h1>
+          <TableDisplay />
         </div>
 
 
