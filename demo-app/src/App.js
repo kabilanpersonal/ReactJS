@@ -7,6 +7,7 @@ import UserlistWithData from './HigherOrderComponents/UserlistWithData';
 import CustomerAdd from './HandsOn/CustomerAdd';  
 import ObjectStateManagement from './State-Non-Primitive data/ObjectStateManagement'
 import TableDisplay from './HandsOn/TableDisplay';
+import CounterComponent from './Custom Hooks/CounterComponent';
 //Class inheritance
 class Car {
   constructor(name) {
@@ -139,6 +140,10 @@ function App(props) {
         <div>
           <h1>Hands ON</h1>
           <TableDisplay />
+        </div>
+        <div>
+          <h1>Custom Hooks</h1>
+          <CounterComponent />
         </div>
 
 
