@@ -19,7 +19,7 @@ const CustomerAdd = () => {
   return (
     <>
     <h3>Add Customer</h3>
-    <input type='text' value={input.name} onChange = {(e)=> setInput({...input, name: e.target.value})}></input>
+    <input type='text' value={input.name} onChange = {(e)=> setInput({...input, name: e.target.value})} />
     <button onClick={addCustomer}>Add</button>
     <ol>
       {Customers.map((customer) => (
