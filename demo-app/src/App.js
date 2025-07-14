@@ -9,6 +9,7 @@ import ObjectStateManagement from './State-Non-Primitive data/ObjectStateManagem
 import TableDisplay from './HandsOn/TableDisplay';
 import CounterComponent from './Custom Hooks/CounterComponent';
 import ColorChange from './HandsOn/ColorChange';
+import ParallelApiCalls from './HandsOn/ParallelApiCalls'
 //Class inheritance
 class Car {
   constructor(name) {
@@ -142,6 +143,7 @@ function App(props) {
           <h1>Hands ON</h1>
           <TableDisplay />
           <ColorChange />
+          <ParallelApiCalls />
         </div>
         <div>
           <h1>Custom Hooks</h1>
