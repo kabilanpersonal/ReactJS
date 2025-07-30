@@ -10,14 +10,15 @@ const authenticate = (req, res, next) => {
         return res.status(401).json({ message: 'No token provided' });
 
     }
-    const token = header.split(' ')[1];
-    jwt.verify(token,secretKey, (err, user) =>{
-        if(err){
-            return res.status(403).json({message: "Invalid token"});
-        }
-        req.user = user;
+    try{
+        const decoded= jwt.verify(header.replace('Bearer', ''),secretKey);
+        req.user = decoded;
         next();
-    });
+
+    }catch(error){
+        return res.status(401).json({ error: 'Invalid token. Authentication failed.' });
+
+    }
 }
 
 const authorization = (...authorizedRoles) => {
