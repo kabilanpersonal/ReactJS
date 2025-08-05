@@ -2,6 +2,7 @@ import UseStateHooks from "./UseStateHooks"
 import UseEffectHook from "./UseEffectHook"
 import UseContextHook from "./UseContextHook"
 import UseReducerHook from "./UseReducerHook"
+import UseRefHooks from "./UseRefHooks"
 const ReactHooks = () => {
     return (
         <>
@@ -18,6 +19,7 @@ const ReactHooks = () => {
             <li><UseEffectHook /></li>
             <li><UseContextHook /></li>   
             <li><UseReducerHook /></li>
+            <li><UseRefHooks /></li>
         </ol>
         </>
     )
