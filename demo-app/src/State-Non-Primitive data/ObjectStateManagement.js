@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 
 const ObjectStateManagement = () => {
     // Object state for profile information
