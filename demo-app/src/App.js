@@ -10,6 +10,7 @@ import TableDisplay from './HandsOn/TableDisplay';
 import CounterComponent from './Custom Hooks/CounterComponent';
 import ColorChange from './HandsOn/ColorChange';
 import ParallelApiCalls from './HandsOn/ParallelApiCalls'
+import ConditionalRendering from './HandsOn/ConditionalRendering';
 //Class inheritance
 class Car {
   constructor(name) {
@@ -144,6 +145,7 @@ function App(props) {
           <TableDisplay />
           <ColorChange />
           <ParallelApiCalls />
+          <ConditionalRendering  status="Pending"/>
         </div>
         <div>
           <h1>Custom Hooks</h1>
