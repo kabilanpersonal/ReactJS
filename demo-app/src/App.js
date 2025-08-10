@@ -11,6 +11,7 @@ import CounterComponent from './Custom Hooks/CounterComponent';
 import ColorChange from './HandsOn/ColorChange';
 import ParallelApiCalls from './HandsOn/ParallelApiCalls'
 import ConditionalRendering from './HandsOn/ConditionalRendering';
+import CheckerBoard from './Interview/Wissen/CheckerBoard';
 //Class inheritance
 class Car {
   constructor(name) {
@@ -150,6 +151,10 @@ function App(props) {
         <div>
           <h1>Custom Hooks</h1>
           <CounterComponent />
+        </div>
+        <div>
+          <h1>Checker Board</h1>
+          <CheckerBoard />
         </div>
 
 
